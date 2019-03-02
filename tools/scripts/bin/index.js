@@ -75,8 +75,7 @@ const dict = {
     describe: 'Build all products',
 
     act () {
-      callCmd('buildTypescript', '--module', 'esnext')
-      mkspawn(commands.makeMJS)()
+      callCmd('buildMJS')
       callCmd('buildTypescript')
     }
   },
@@ -146,6 +145,15 @@ const dict = {
     }
   },
 
+  buildMJS: {
+    describe: 'Compile TypeScript files into ESM JavaScript',
+
+    act () {
+      callCmd('buildTypescript', '--module', 'esnext')
+      callCmd('makeMJS')
+    }
+  },
+
   buildTypescript: {
     describe: 'Compile TypeScript files',
     act: mkspawn(
@@ -158,6 +166,11 @@ const dict = {
   cleanTypescriptBuild: {
     describe: 'Clean TSC build products',
     act: mkspawn(commands.cleanTypescriptBuild)
+  },
+
+  makeMJS: {
+    describe: 'Change extension of all output *.js files to *.mjs',
+    act: mkspawn(commands.makeMJS)
   },
 
   gitTagVersions: {
