@@ -6,7 +6,7 @@
   "dependencies": {
     "fs-extra": "^8.0.0",
     "fs-tree-utils": "^0.1.6",
-    "@types/fs-extra": "^7.0.0",
+    "@types/fs-extra": "^8.0.0",
     "@tools/places": "file:../places"
   }
 }
