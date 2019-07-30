@@ -4,9 +4,9 @@
   "private": true,
   "bin": "bin.js",
   "dependencies": {
-    "fs-extra": "^7.0.1",
+    "fs-extra": "^8.0.0",
     "fs-tree-utils": "^0.1.6",
-    "@types/fs-extra": "^5.0.4",
+    "@types/fs-extra": "^8.0.0",
     "@tools/places": "file:../places"
   }
 }

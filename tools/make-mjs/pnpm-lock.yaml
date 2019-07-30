@@ -1,24 +1,30 @@
 dependencies:
   '@tools/places': 'link:../places'
-  '@types/fs-extra': 5.0.5
-  fs-extra: 7.0.1
+  '@types/fs-extra': 8.0.0
+  fs-extra: 8.0.1
   fs-tree-utils: 0.1.6
 lockfileVersion: 5.1
 packages:
-  /@types/fs-extra/5.0.5:
+  /@types/fs-extra/5.1.0:
     dependencies:
-      '@types/node': 11.11.1
+      '@types/node': 12.0.10
     dev: false
     resolution:
-      integrity: sha512-w7iqhDH9mN8eLClQOYTkhdYUOSpp25eXxfc6VbFOGtzxW34JcvctH2bKjj4jD4++z4R5iO5D+pg48W2e03I65A==
-  /@types/node/10.12.30:
+      integrity: sha512-AInn5+UBFIK9FK5xc9yP5e3TQSPNNgjHByqYcj9g5elVBnDQcQL7PlO1CIRy2gWlbwK7UPYqi7vRvFA44dCmYQ==
+  /@types/fs-extra/8.0.0:
+    dependencies:
+      '@types/node': 12.0.10
     dev: false
     resolution:
-      integrity: sha512-nsqTN6zUcm9xtdJiM9OvOJ5EF0kOI8f1Zuug27O/rgtxCRJHGqncSWfCMZUP852dCKPsDsYXGvBhxfRjDBkF5Q==
-  /@types/node/11.11.1:
+      integrity: sha512-bCtL5v9zdbQW86yexOlXWTEGvLNqWxMFyi7gQA7Gcthbezr2cPSOb8SkESVKA937QD5cIwOFLDFt0MQoXOEr9Q==
+  /@types/node/10.14.10:
     dev: false
     resolution:
-      integrity: sha512-2azXFP9n4aA2QNLkKm/F9pzKxgYj1SMawZ5Eh9iC21RH3XNcFsivLVU2NhpMgQm7YobSByvIol4c42ZFusXFHQ==
+      integrity: sha512-V8wj+w2YMNvGuhgl/MA5fmTxgjmVHVoasfIaxMMZJV6Y8Kk+Ydpi1z2whoShDCJ2BuNVoqH/h1hrygnBxkrw/Q==
+  /@types/node/12.0.10:
+    dev: false
+    resolution:
+      integrity: sha512-LcsGbPomWsad6wmMNv7nBLw7YYYyfdYcz6xryKYQhx89c3XXan+8Q6AJ43G5XDIaklaVkK3mE4fCb0SBvMiPSQ==
   /@types/ramda/0.25.51:
     dev: false
     resolution:
@@ -33,15 +39,25 @@ packages:
       node: '>=6 <7 || >=8'
     resolution:
       integrity: sha512-YJDaCJZEnBmcbw13fvdAM9AwNOJwOzrE4pqMqBq5nFiEqXUqHwlK4B+3pUw6JNvfSPtX05xFHtYy/1ni01eGCw==
+  /fs-extra/8.0.1:
+    dependencies:
+      graceful-fs: 4.1.15
+      jsonfile: 4.0.0
+      universalify: 0.1.2
+    dev: false
+    engines:
+      node: '>=6 <7 || >=8'
+    resolution:
+      integrity: sha512-W+XLrggcDzlle47X/XnS7FXrXu9sDo+Ze9zpndeBxdgv88FHLm1HtmkhEwavruS6koanBjp098rUpHs65EmG7A==
   /fs-tree-utils/0.1.6:
     dependencies:
-      '@types/fs-extra': 5.0.5
-      '@types/node': 10.12.30
+      '@types/fs-extra': 5.1.0
+      '@types/node': 10.14.10
       '@types/ramda': 0.25.51
       fs-extra: 7.0.1
       monorepo-shared-assets: 0.0.17
       ramda: 0.25.0
-      tslib: 1.9.3
+      tslib: 1.10.0
     dev: false
     engines:
       node: '>= 8.9.0'
@@ -65,11 +81,11 @@ packages:
       integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
   /monorepo-shared-assets/0.0.17:
     dependencies:
-      '@types/node': 10.12.30
+      '@types/node': 10.14.10
       '@types/ramda': 0.25.51
       immutable: 3.8.2
       ramda: 0.25.0
-      tslib: 1.9.3
+      tslib: 1.10.0
     dev: false
     engines:
       node: '>= 8.9.0'
@@ -79,10 +95,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-GXpfrYVPwx3K7RQ6aYT8KPS8XViSXUVJT1ONhoKPE9VAleW42YE+U+8VEyGWt41EnEQW7gwecYJriTI0pKoecQ==
-  /tslib/1.9.3:
+  /tslib/1.10.0:
     dev: false
     resolution:
-      integrity: sha512-4krF8scpejhaOgqzBEcGM7yDIEfi0/8+8zDRZhNZZ2kjmHJ4hv3zCbQWxoJGz1iw5U0Jl0nma13xzHXcncMavQ==
+      integrity: sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
   /universalify/0.1.2:
     dev: false
     engines:
@@ -91,6 +107,6 @@ packages:
       integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
 specifiers:
   '@tools/places': 'file:../places'
-  '@types/fs-extra': ^5.0.4
-  fs-extra: ^7.0.1
+  '@types/fs-extra': ^8.0.0
+  fs-extra: ^8.0.0
   fs-tree-utils: ^0.1.6
