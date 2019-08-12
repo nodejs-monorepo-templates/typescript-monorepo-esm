@@ -1,6 +1,7 @@
 module.exports = {
   cleanTypescriptBuild: require.resolve('@tools/clean-typescript-build/bin'),
   jest: require.resolve('@tools/jest/bin'),
+  createNewFolder: require.resolve('@tools/create-new-folder/bin'),
   gitTagVersions: require.resolve('@tools/git-tag-versions/bin'),
   makeMJS: require.resolve('@tools/make-mjs/bin'),
   preloadedNode: require.resolve('@tools/preloaded-node/bin'),
