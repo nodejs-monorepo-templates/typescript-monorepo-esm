@@ -1,5 +1,5 @@
 {
-  "name": "@tools/create-new-folder",
+  "name": "@tools/add-dependency",
   "version": "0.0.0",
   "private": true,
   "bin": "bin.js",
@@ -10,7 +10,6 @@
     "@types/inquirer": "^6.5.0",
     "@types/fs-extra": "^8.0.0",
     "@tools/preloaded-node": "file:../preloaded-node",
-    "@tools/pkgcfg": "file:../pkgcfg",
     "@tools/places": "file:../places",
     "@tools/utils": "file:../utils"
   }
