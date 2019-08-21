@@ -9,6 +9,9 @@
       "es2018",
       "esnext"
     ],
+    "preserveConstEnums": true,
+    "incremental": true,
+    "tsBuildInfoFile": ".tsbuildinfo",
     "declaration": true,
     "sourceMap": true,
     "importHelpers": true,
