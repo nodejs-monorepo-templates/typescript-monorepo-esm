@@ -2,13 +2,13 @@
   "private": true,
   "author": "Hoàng Văn Khải <hvksmr1996@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/nodejs-monorepo-templates/typescript-monorepo#readme",
+  "homepage": "https://github.com/nodejs-monorepo-templates/typescript-monorepo-esm#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nodejs-monorepo-templates/typescript-monorepo.git"
+    "url": "git+https://github.com/nodejs-monorepo-templates/typescript-monorepo-esm.git"
   },
   "bugs": {
-    "url": "https://github.com/nodejs-monorepo-templates/typescript-monorepo/issues"
+    "url": "https://github.com/nodejs-monorepo-templates/typescript-monorepo-esm/issues"
   },
   "devDependencies": {
     "standard": "^14.1.0",
