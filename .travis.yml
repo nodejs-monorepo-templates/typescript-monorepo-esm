@@ -14,10 +14,11 @@ node_js:
 cache:
   directories:
     - $HOME/.pnpm-store
-    - $HOME/.npm
-    - $HOME/.nvm
     - $HOME/.node-gyp
     - $HOME/.node_libraries
+
+before_cache:
+  - pnpm store prune
 
 before_install:
   - curl -L https://unpkg.com/@pnpm/self-installer | node
