@@ -32,6 +32,8 @@ const test = {
   globals: {
     'ts-jest': {
       diagnostics: false,
+      isolatedModules: true,
+      preserveConstEnums: true,
       tsConfig: path.resolve(__dirname, 'tsconfig.test.json')
     }
   }
