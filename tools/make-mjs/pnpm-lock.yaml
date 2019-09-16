@@ -1,6 +1,6 @@
 dependencies:
-  '@make-mjs/file': 0.0.1
-  '@make-mjs/main': 0.0.2
+  '@make-mjs/file': 0.0.2
+  '@make-mjs/main': 0.0.3
   '@tools/places': 'link:../places'
   '@types/fs-extra': 8.0.0
   fs-extra: 8.1.0
@@ -87,13 +87,13 @@ packages:
     dev: false
     resolution:
       integrity: sha512-X7gdiuaCmA0uRjCmRtYJNAVCc/q+5xSgsfKJHqMN4iNLILX39677fJE1O40arPMh0TTtS9ItH67yre6c7k6t0g==
-  /@make-mjs/file/0.0.1:
+  /@make-mjs/file/0.0.2:
     dependencies:
       '@babel/generator': 7.6.0
       '@babel/parser': 7.6.0
       '@babel/traverse': 7.6.0
       '@babel/types': 7.6.1
-      '@make-mjs/path': 0.0.1
+      '@make-mjs/path': 0.0.2
       '@tsfun/object': 0.0.2
       '@types/babel__generator': 7.0.2
       '@types/babel__traverse': 7.0.7
@@ -104,21 +104,21 @@ packages:
       tslib: 1.10.0
     dev: false
     resolution:
-      integrity: sha512-qUrlYEnf5wDX/zmqVkiJen1PR6DJE6w1QGPNPXCxK6wznFBGANilb6d6wSIJ8JXqDmsZLVW7gvNr5oPrsK/VCQ==
-  /@make-mjs/fs-extra/0.0.1:
+      integrity: sha512-Qa86x/jaaB4o2InqBurKm2M3q7f8zaLdnB46XRrpaspQv4/zmmBSyeTv7982YSOoBBQVU2Z6/feBuAkMO/b5UQ==
+  /@make-mjs/fs-extra/0.0.0:
     dependencies:
-      '@make-mjs/utils': 0.0.1
+      '@make-mjs/utils': 0.0.0
       '@types/fs-extra': 8.0.0
       '@types/node': 12.7.5
       fs-extra: 8.1.0
       tslib: 1.10.0
     dev: false
     resolution:
-      integrity: sha512-NLDYos2AC4bl+xJAT/mgb6UGlEg2nlLzekHk1tFpjGv42K5Vg9RakhpeYuLYtWb5SnsFDQ9OZLDjAWcYXCgwXQ==
-  /@make-mjs/main/0.0.2:
+      integrity: sha512-i5evhF3AzcARr8yQX2VKLxRCXLgaO652uaYrhDw2+iyABTut42xMA8WM2Jmx8AkKbwLQ4XIGXJFp5CoOKoG3JQ==
+  /@make-mjs/main/0.0.3:
     dependencies:
-      '@make-mjs/file': 0.0.1
-      '@make-mjs/fs-extra': 0.0.1
+      '@make-mjs/file': 0.0.2
+      '@make-mjs/fs-extra': 0.0.0
       '@make-mjs/utils': 0.0.1
       '@tsfun/object': 0.0.2
       '@types/node': 12.7.5
@@ -126,10 +126,10 @@ packages:
       tslib: 1.10.0
     dev: false
     resolution:
-      integrity: sha512-/LGDfjAX7DiyTTjchIYWWdxKKoJgO1gQ2/otpKM7TNc1DpGGcoJYOeDePrJINhP/1lj7dgzos0lJTxRRHO3nrQ==
-  /@make-mjs/path/0.0.1:
+      integrity: sha512-3b+nXXb3KNLHzMs0uY7j7xKHP85XisfTEQPdaZoOmY1OCq/3r4Xbck8iaCEb5Gzv3EJYZxNGzj/qfHXyfqXuEg==
+  /@make-mjs/path/0.0.2:
     dependencies:
-      '@make-mjs/fs-extra': 0.0.1
+      '@make-mjs/fs-extra': 0.0.0
       '@make-mjs/utils': 0.0.1
       '@tsfun/object': 0.0.2
       '@types/node': 12.7.5
@@ -137,7 +137,14 @@ packages:
       tslib: 1.10.0
     dev: false
     resolution:
-      integrity: sha512-a8Py6drdAoYTyB9qo4f5arzDn4XJQB8fDXFP+Ul+lA4v7nZU57OJWI5OGqRawvQOx1QsGx2RPweGl1p8WnGWdg==
+      integrity: sha512-/uqeWKgDtXKL0ayHslBsLYFrXwNs+MjbNZY0RZkvVmXDRSIwBolj8uKitnX7r0fP+EtTGfnONoYXApCtz4MnAA==
+  /@make-mjs/utils/0.0.0:
+    dependencies:
+      '@types/node': 12.7.5
+      tslib: 1.10.0
+    dev: false
+    resolution:
+      integrity: sha512-TJMJDMA6IyiV7L2fwZI0lo+eygmssGy2nkCbpFVsSJxVmBRvpf7Iv9okNtS7GPIfJBfSYGq0cT+GBzMvz1flzw==
   /@make-mjs/utils/0.0.1:
     dependencies:
       '@types/node': 12.7.5
@@ -376,8 +383,8 @@ packages:
     resolution:
       integrity: sha512-mqRJXN7dEArK/NZNJUubjr9kbFFVZcmF/JHDc9jt5O/aYXUVmopHYujDMhLmLil1Bxo2+khe6KAIVvDH9Yc4VA==
 specifiers:
-  '@make-mjs/file': ^0.0.1
-  '@make-mjs/main': ^0.0.2
+  '@make-mjs/file': ^0.0.2
+  '@make-mjs/main': ^0.0.3
   '@tools/places': 'file:../places'
   '@types/fs-extra': ^8.0.0
   fs-extra: ^8.1.0
