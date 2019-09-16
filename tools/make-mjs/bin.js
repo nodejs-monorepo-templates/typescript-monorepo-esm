@@ -1,54 +1,27 @@
 #! /usr/bin/env node
 const path = require('path')
 const process = require('process')
-const { rename, stat } = require('fs-extra')
-const { traverse } = require('fs-tree-utils')
+const fsx = require('fs-extra')
+const proceed = require('@make-mjs/main').main
 const places = require('@tools/places')
 
 async function main () {
-  const list = await traverse(
-    path.join(places.packages),
-    {
-      deep: x => !['node_modules', '.git'].includes(x.item)
+  const IGNORED_DIRECTORIES = ['.git', 'node_modules']
+
+  const events = proceed({
+    dirname: places.packages,
+    deep: param => !IGNORED_DIRECTORIES.includes(param.base),
+    filter: param => param.base.endsWith('.js')
+  })
+
+  for await (const event of events) {
+    if (event.type === 'AfterWrite') {
+      const { root, dir, name } = path.parse(event.file.path)
+      const oldDef = path.join(root, dir, name + '.d.ts')
+      const newDef = event.file.path + '.d.ts'
+      await fsx.copyFile(oldDef, newDef)
     }
-  )
-
-  const renamingPromises = list
-    .filter(x => x.stats.isFile())
-    .map(({ path: oldPath }) => ({
-      oldPath,
-      ...path.parse(oldPath)
-    }))
-    .filter(x => x.ext === '.js')
-    .map(({ oldPath, dir, name }) => ({
-      oldPath,
-      newPath: path.join(dir, name + '.mjs'),
-      tsPath: path.join(dir, name + '.ts')
-    }))
-    .map(async param => {
-      const { oldPath, newPath, tsPath } = param
-
-      const statResult = await stat(tsPath).then(
-        stats => ({ stats }),
-        error => ({ error })
-      )
-
-      if ('stats' in statResult) {
-        if (!statResult.stats.isFile()) return param
-        await rename(oldPath, newPath)
-        return param
-      }
-
-      const { error } = statResult
-
-      if (typeof error === 'object' && error.code === 'ENOENT') {
-        return param
-      }
-
-      throw statResult.error
-    })
-
-  await Promise.all(renamingPromises)
+  }
 
   return 0
 }

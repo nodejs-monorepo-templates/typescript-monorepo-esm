@@ -1,44 +1,239 @@
 dependencies:
+  '@make-mjs/main': 0.0.0
   '@tools/places': 'link:../places'
   '@types/fs-extra': 8.0.0
   fs-extra: 8.1.0
-  fs-tree-utils: 0.1.6
 lockfileVersion: 5.1
 packages:
-  /@types/fs-extra/5.1.0:
+  /@babel/code-frame/7.5.5:
     dependencies:
-      '@types/node': 12.0.10
+      '@babel/highlight': 7.5.0
     dev: false
     resolution:
-      integrity: sha512-AInn5+UBFIK9FK5xc9yP5e3TQSPNNgjHByqYcj9g5elVBnDQcQL7PlO1CIRy2gWlbwK7UPYqi7vRvFA44dCmYQ==
+      integrity: sha512-27d4lZoomVyo51VegxI20xZPuSHusqbQag/ztrBC7wegWoQ1nLREPVSKSW8byhTlzTKyNE4ifaTA6lCp7JjpFw==
+  /@babel/generator/7.6.0:
+    dependencies:
+      '@babel/types': 7.6.1
+      jsesc: 2.5.2
+      lodash: 4.17.15
+      source-map: 0.5.7
+      trim-right: 1.0.1
+    dev: false
+    resolution:
+      integrity: sha512-Ms8Mo7YBdMMn1BYuNtKuP/z0TgEIhbcyB8HVR6PPNYp4P61lMsABiS4A3VG1qznjXVCf3r+fVHhm4efTYVsySA==
+  /@babel/helper-function-name/7.1.0:
+    dependencies:
+      '@babel/helper-get-function-arity': 7.0.0
+      '@babel/template': 7.6.0
+      '@babel/types': 7.6.1
+    dev: false
+    resolution:
+      integrity: sha512-A95XEoCpb3TO+KZzJ4S/5uW5fNe26DjBGqf1o9ucyLyCmi1dXq/B3c8iaWTfBk3VvetUxl16e8tIrd5teOCfGw==
+  /@babel/helper-get-function-arity/7.0.0:
+    dependencies:
+      '@babel/types': 7.6.1
+    dev: false
+    resolution:
+      integrity: sha512-r2DbJeg4svYvt3HOS74U4eWKsUAMRH01Z1ds1zx8KNTPtpTL5JAsdFv8BNyOpVqdFhHkkRDIg5B4AsxmkjAlmQ==
+  /@babel/helper-split-export-declaration/7.4.4:
+    dependencies:
+      '@babel/types': 7.6.1
+    dev: false
+    resolution:
+      integrity: sha512-Ro/XkzLf3JFITkW6b+hNxzZ1n5OQ80NvIUdmHspih1XAhtN3vPTuUFT4eQnela+2MaZ5ulH+iyP513KJrxbN7Q==
+  /@babel/highlight/7.5.0:
+    dependencies:
+      chalk: 2.4.2
+      esutils: 2.0.3
+      js-tokens: 4.0.0
+    dev: false
+    resolution:
+      integrity: sha512-7dV4eu9gBxoM0dAnj/BCFDW9LFU0zvTrkq0ugM7pnHEgguOEeOz1so2ZghEdzviYzQEED0r4EAgpsBChKy1TRQ==
+  /@babel/parser/7.6.0:
+    dev: false
+    engines:
+      node: '>=6.0.0'
+    hasBin: true
+    resolution:
+      integrity: sha512-+o2q111WEx4srBs7L9eJmcwi655eD8sXniLqMB93TBK9GrNzGrxDWSjiqz2hLU0Ha8MTXFIP0yd9fNdP+m43ZQ==
+  /@babel/template/7.6.0:
+    dependencies:
+      '@babel/code-frame': 7.5.5
+      '@babel/parser': 7.6.0
+      '@babel/types': 7.6.1
+    dev: false
+    resolution:
+      integrity: sha512-5AEH2EXD8euCk446b7edmgFdub/qfH1SN6Nii3+fyXP807QRx9Q73A2N5hNwRRslC2H9sNzaFhsPubkS4L8oNQ==
+  /@babel/traverse/7.6.0:
+    dependencies:
+      '@babel/code-frame': 7.5.5
+      '@babel/generator': 7.6.0
+      '@babel/helper-function-name': 7.1.0
+      '@babel/helper-split-export-declaration': 7.4.4
+      '@babel/parser': 7.6.0
+      '@babel/types': 7.6.1
+      debug: 4.1.1
+      globals: 11.12.0
+      lodash: 4.17.15
+    dev: false
+    resolution:
+      integrity: sha512-93t52SaOBgml/xY74lsmt7xOR4ufYvhb5c5qiM6lu4J/dWGMAfAh6eKw4PjLes6DI6nQgearoxnFJk60YchpvQ==
+  /@babel/types/7.6.1:
+    dependencies:
+      esutils: 2.0.3
+      lodash: 4.17.15
+      to-fast-properties: 2.0.0
+    dev: false
+    resolution:
+      integrity: sha512-X7gdiuaCmA0uRjCmRtYJNAVCc/q+5xSgsfKJHqMN4iNLILX39677fJE1O40arPMh0TTtS9ItH67yre6c7k6t0g==
+  /@make-mjs/file/0.0.0:
+    dependencies:
+      '@babel/generator': 7.6.0
+      '@babel/parser': 7.6.0
+      '@babel/traverse': 7.6.0
+      '@babel/types': 7.6.1
+      '@make-mjs/path': 0.0.0
+      '@tsfun/object': 0.0.1
+      '@types/babel__generator': 7.0.2
+      '@types/babel__traverse': 7.0.7
+      '@types/fs-extra': 8.0.0
+      '@types/node': 12.7.5
+      fs-extra: 8.1.0
+      remote-controlled-promise: 0.0.4
+      tslib: 1.10.0
+    dev: false
+    resolution:
+      integrity: sha512-GYEjejRKBJ+1DYQyiNkkvrpjjmOJ4LBsvXJ0ctnuPzxpkoBldAQ8MUUmux5l5nOd2uTPvMzKYDpdiyrLepj8cA==
+  /@make-mjs/fs-extra/0.0.0:
+    dependencies:
+      '@make-mjs/utils': 0.0.0
+      '@types/fs-extra': 8.0.0
+      '@types/node': 12.7.5
+      fs-extra: 8.1.0
+      tslib: 1.10.0
+    dev: false
+    resolution:
+      integrity: sha512-i5evhF3AzcARr8yQX2VKLxRCXLgaO652uaYrhDw2+iyABTut42xMA8WM2Jmx8AkKbwLQ4XIGXJFp5CoOKoG3JQ==
+  /@make-mjs/main/0.0.0:
+    dependencies:
+      '@make-mjs/file': 0.0.0
+      '@make-mjs/fs-extra': 0.0.0
+      '@make-mjs/utils': 0.0.0
+      '@tsfun/object': 0.0.1
+      '@types/node': 12.7.5
+      tslib: 1.10.0
+    dev: false
+    resolution:
+      integrity: sha512-rDKBow/iQ+fzSu4rftpsidU53MiyfIVOTEJtTLZXWb6aVhebvxmPkII8eclKLGbNuFDqkFcCQAcB74gXuTfeeA==
+  /@make-mjs/path/0.0.0:
+    dependencies:
+      '@make-mjs/fs-extra': 0.0.0
+      '@make-mjs/utils': 0.0.0
+      '@tsfun/object': 0.0.1
+      '@types/node': 12.7.5
+      exec-once: 0.0.2
+      tslib: 1.10.0
+    dev: false
+    resolution:
+      integrity: sha512-U5QcCYer4YPB67RLV/yUr4R9wCOZhcwaUFWagreRWuGeB4Z4ov0TJdixsdDk9441WS0sCqztkrv6m2/kHJrxGA==
+  /@make-mjs/utils/0.0.0:
+    dependencies:
+      '@types/node': 12.7.5
+      tslib: 1.10.0
+    dev: false
+    resolution:
+      integrity: sha512-TJMJDMA6IyiV7L2fwZI0lo+eygmssGy2nkCbpFVsSJxVmBRvpf7Iv9okNtS7GPIfJBfSYGq0cT+GBzMvz1flzw==
+  /@tsfun/object/0.0.1:
+    dependencies:
+      '@types/node': 12.7.5
+      tslib: 1.10.0
+      utility-types: 3.7.0
+    dev: false
+    resolution:
+      integrity: sha512-1Znc/BmghtFnxgVrhkpvhSf5HpZbnEcKmXqsXSCXJP0+BW2C00d5st5qkBErSTTEvcGAMgPZ9E95ydlMO8lcrg==
+  /@types/babel__generator/7.0.2:
+    dependencies:
+      '@babel/types': 7.6.1
+    dev: false
+    resolution:
+      integrity: sha512-NHcOfab3Zw4q5sEE2COkpfXjoE7o+PmqD9DQW4koUT3roNxwziUdXGnRndMat/LJNUtePwn1TlP4do3uoe3KZQ==
+  /@types/babel__traverse/7.0.7:
+    dependencies:
+      '@babel/types': 7.6.1
+    dev: false
+    resolution:
+      integrity: sha512-CeBpmX1J8kWLcDEnI3Cl2Eo6RfbGvzUctA+CjZUhOKDFbLfcr7fc4usEqLNWetrlJd7RhAkyYe2czXop4fICpw==
   /@types/fs-extra/8.0.0:
     dependencies:
       '@types/node': 12.0.10
     dev: false
     resolution:
       integrity: sha512-bCtL5v9zdbQW86yexOlXWTEGvLNqWxMFyi7gQA7Gcthbezr2cPSOb8SkESVKA937QD5cIwOFLDFt0MQoXOEr9Q==
-  /@types/node/10.14.10:
+  /@types/node/10.14.18:
     dev: false
     resolution:
-      integrity: sha512-V8wj+w2YMNvGuhgl/MA5fmTxgjmVHVoasfIaxMMZJV6Y8Kk+Ydpi1z2whoShDCJ2BuNVoqH/h1hrygnBxkrw/Q==
+      integrity: sha512-ryO3Q3++yZC/+b8j8BdKd/dn9JlzlHBPdm80656xwYUdmPkpTGTjkAdt6BByiNupGPE8w0FhBgvYy/fX9hRNGQ==
   /@types/node/12.0.10:
     dev: false
     resolution:
       integrity: sha512-LcsGbPomWsad6wmMNv7nBLw7YYYyfdYcz6xryKYQhx89c3XXan+8Q6AJ43G5XDIaklaVkK3mE4fCb0SBvMiPSQ==
-  /@types/ramda/0.25.51:
+  /@types/node/12.7.5:
     dev: false
     resolution:
-      integrity: sha512-xcmtfHIgF9SYjhGdsZR1nQslxG4hu0cIpFfLQ4CWdw3KzHvl7ki1AzFLQUkbDTG42ZN3ZsQfdRzXRlkAvbIy5Q==
-  /fs-extra/7.0.1:
+      integrity: sha512-9fq4jZVhPNW8r+UYKnxF1e2HkDWOWKM5bC2/7c9wPV835I0aOrVbS/Hw/pWPk2uKrNXQqg9Z959Kz+IYDd5p3w==
+  /ansi-styles/3.2.1:
     dependencies:
-      graceful-fs: 4.1.15
-      jsonfile: 4.0.0
-      universalify: 0.1.2
+      color-convert: 1.9.3
     dev: false
     engines:
-      node: '>=6 <7 || >=8'
+      node: '>=4'
     resolution:
-      integrity: sha512-YJDaCJZEnBmcbw13fvdAM9AwNOJwOzrE4pqMqBq5nFiEqXUqHwlK4B+3pUw6JNvfSPtX05xFHtYy/1ni01eGCw==
+      integrity: sha512-VT0ZI6kZRdTh8YyJw3SMbYm/u+NqfsAxEpWO0Pf9sq8/e94WxxOpPKx9FR1FlyCtOVDNOQ+8ntlqFxiRc+r5qA==
+  /chalk/2.4.2:
+    dependencies:
+      ansi-styles: 3.2.1
+      escape-string-regexp: 1.0.5
+      supports-color: 5.5.0
+    dev: false
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==
+  /color-convert/1.9.3:
+    dependencies:
+      color-name: 1.1.3
+    dev: false
+    resolution:
+      integrity: sha512-QfAUtd+vFdAtFQcC8CCyYt1fYWxSqAiK2cSD6zDB8N3cpsEBAvRxp9zOGg6G/SHHJYAT88/az/IuDGALsNVbGg==
+  /color-name/1.1.3:
+    dev: false
+    resolution:
+      integrity: sha1-p9BVi9icQveV3UIyj3QIMcpTvCU=
+  /debug/4.1.1:
+    dependencies:
+      ms: 2.1.2
+    dev: false
+    resolution:
+      integrity: sha512-pYAIzeRo8J6KPEaJ0VWOh5Pzkbw/RetuzehGM7QRRX5he4fPHx2rdKMB256ehJCkX+XRQm16eZLqLNS8RSZXZw==
+  /escape-string-regexp/1.0.5:
+    dev: false
+    engines:
+      node: '>=0.8.0'
+    resolution:
+      integrity: sha1-G2HAViGQqN/2rjuyzwIAyhMLhtQ=
+  /esutils/2.0.3:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha512-kVscqXk4OCp68SZ0dkgEKVi6/8ij300KBWTJq32P/dYeWTSwK41WyTxalN1eRmA5Z9UU/LX9D7FWSmV9SAYx6g==
+  /exec-once/0.0.2:
+    dependencies:
+      '@types/node': 12.7.5
+      tslib: 1.10.0
+    dev: false
+    resolution:
+      integrity: sha512-h3NkZoW2ETeMR2j9GN++c1/BLF+rq24+wLSsjPMhmzPzGVaN0PJdi/J4fcpjsCUlgVMUgJRcdhqvSurCFx4DWQ==
   /fs-extra/8.1.0:
     dependencies:
       graceful-fs: 4.2.0
@@ -49,56 +244,82 @@ packages:
       node: '>=6 <7 || >=8'
     resolution:
       integrity: sha512-yhlQgA6mnOJUKOsRUFsgJdQCvkKhcz8tlZG5HBQfReYZy46OwLcY+Zia0mtdHsOo9y/hP+CxMN0TU9QxoOtG4g==
-  /fs-tree-utils/0.1.6:
-    dependencies:
-      '@types/fs-extra': 5.1.0
-      '@types/node': 10.14.10
-      '@types/ramda': 0.25.51
-      fs-extra: 7.0.1
-      monorepo-shared-assets: 0.0.17
-      ramda: 0.25.0
-      tslib: 1.10.0
+  /globals/11.12.0:
     dev: false
     engines:
-      node: '>= 8.9.0'
+      node: '>=4'
     resolution:
-      integrity: sha512-qsOeiFlr2zfQXkLziZh5FLxRPHmUm3Cfwj4cTjVVVij1gtHGkS11/6nxGA1l7ndvb2d+iKiQartR0cewodT5zg==
-  /graceful-fs/4.1.15:
-    dev: false
-    resolution:
-      integrity: sha512-6uHUhOPEBgQ24HM+r6b/QwWfZq+yiFcipKFrOFiBEnWdy5sdzYoi+pJeQaPI5qOLRFqWmAXUPQNsielzdLoecA==
+      integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==
   /graceful-fs/4.2.0:
     dev: false
     resolution:
       integrity: sha512-jpSvDPV4Cq/bgtpndIWbI5hmYxhQGHPC4d4cqBPb4DLniCfhJokdXhwhaDuLBGLQdvvRum/UiX6ECVIPvDXqdg==
-  /immutable/3.8.2:
+  /has-flag/3.0.0:
     dev: false
     engines:
-      node: '>=0.10.0'
+      node: '>=4'
     resolution:
-      integrity: sha1-wkOZUUVbs5kT2vKBN28VMOEErfM=
+      integrity: sha1-tdRU3CGZriJWmfNGfloH87lVuv0=
+  /js-tokens/4.0.0:
+    dev: false
+    resolution:
+      integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==
+  /jsesc/2.5.2:
+    dev: false
+    engines:
+      node: '>=4'
+    hasBin: true
+    resolution:
+      integrity: sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA==
   /jsonfile/4.0.0:
     dev: false
     optionalDependencies:
       graceful-fs: 4.2.0
     resolution:
       integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
-  /monorepo-shared-assets/0.0.17:
+  /lodash/4.17.15:
+    dev: false
+    resolution:
+      integrity: sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  /ms/2.1.2:
+    dev: false
+    resolution:
+      integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
+  /remote-controlled-promise/0.0.4:
     dependencies:
-      '@types/node': 10.14.10
-      '@types/ramda': 0.25.51
-      immutable: 3.8.2
-      ramda: 0.25.0
+      '@types/node': 10.14.18
       tslib: 1.10.0
     dev: false
     engines:
       node: '>= 8.9.0'
     resolution:
-      integrity: sha512-A0Y2mZ06vwBR0fyZdZZPn5MJcaIcxfs7BGGv9SU82c6e6k6UwnEQWmVx4LkiVvlnwgKI7+MVIFwMwTZhRGM+eQ==
-  /ramda/0.25.0:
+      integrity: sha512-W7bYnBI034KWmaxEerPxuUcrvnC4RX7H42vNH5aXIAObwwEX7gEsbL9wbCZxMUsCJDGDd3CiQFSyjZkw3xsnDw==
+  /source-map/0.5.7:
     dev: false
+    engines:
+      node: '>=0.10.0'
     resolution:
-      integrity: sha512-GXpfrYVPwx3K7RQ6aYT8KPS8XViSXUVJT1ONhoKPE9VAleW42YE+U+8VEyGWt41EnEQW7gwecYJriTI0pKoecQ==
+      integrity: sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=
+  /supports-color/5.5.0:
+    dependencies:
+      has-flag: 3.0.0
+    dev: false
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha512-QjVjwdXIt408MIiAqCX4oUKsgU2EqAGzs2Ppkm4aQYbjm+ZEWEcW4SfFNTr4uMNZma0ey4f5lgLrkB0aX0QMow==
+  /to-fast-properties/2.0.0:
+    dev: false
+    engines:
+      node: '>=4'
+    resolution:
+      integrity: sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=
+  /trim-right/1.0.1:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-yy4SAwZ+DI3h9hQJS5/kVwTqYAM=
   /tslib/1.10.0:
     dev: false
     resolution:
@@ -109,8 +330,14 @@ packages:
       node: '>= 4.0.0'
     resolution:
       integrity: sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg==
+  /utility-types/3.7.0:
+    dev: false
+    engines:
+      node: '>= 4'
+    resolution:
+      integrity: sha512-mqRJXN7dEArK/NZNJUubjr9kbFFVZcmF/JHDc9jt5O/aYXUVmopHYujDMhLmLil1Bxo2+khe6KAIVvDH9Yc4VA==
 specifiers:
+  '@make-mjs/main': ^0.0.0
   '@tools/places': 'file:../places'
   '@types/fs-extra': ^8.0.0
   fs-extra: ^8.1.0
-  fs-tree-utils: ^0.1.6
