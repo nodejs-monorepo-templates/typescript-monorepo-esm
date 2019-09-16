@@ -1,5 +1,5 @@
 dependencies:
-  '@make-mjs/main': 0.0.0
+  '@make-mjs/main': 0.0.3
   '@tools/places': 'link:../places'
   '@types/fs-extra': 8.0.0
   fs-extra: 8.1.0
@@ -86,14 +86,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-X7gdiuaCmA0uRjCmRtYJNAVCc/q+5xSgsfKJHqMN4iNLILX39677fJE1O40arPMh0TTtS9ItH67yre6c7k6t0g==
-  /@make-mjs/file/0.0.0:
+  /@make-mjs/file/0.0.2:
     dependencies:
       '@babel/generator': 7.6.0
       '@babel/parser': 7.6.0
       '@babel/traverse': 7.6.0
       '@babel/types': 7.6.1
-      '@make-mjs/path': 0.0.0
-      '@tsfun/object': 0.0.1
+      '@make-mjs/path': 0.0.2
+      '@tsfun/object': 0.0.2
       '@types/babel__generator': 7.0.2
       '@types/babel__traverse': 7.0.7
       '@types/fs-extra': 8.0.0
@@ -103,7 +103,7 @@ packages:
       tslib: 1.10.0
     dev: false
     resolution:
-      integrity: sha512-GYEjejRKBJ+1DYQyiNkkvrpjjmOJ4LBsvXJ0ctnuPzxpkoBldAQ8MUUmux5l5nOd2uTPvMzKYDpdiyrLepj8cA==
+      integrity: sha512-Qa86x/jaaB4o2InqBurKm2M3q7f8zaLdnB46XRrpaspQv4/zmmBSyeTv7982YSOoBBQVU2Z6/feBuAkMO/b5UQ==
   /@make-mjs/fs-extra/0.0.0:
     dependencies:
       '@make-mjs/utils': 0.0.0
@@ -114,28 +114,29 @@ packages:
     dev: false
     resolution:
       integrity: sha512-i5evhF3AzcARr8yQX2VKLxRCXLgaO652uaYrhDw2+iyABTut42xMA8WM2Jmx8AkKbwLQ4XIGXJFp5CoOKoG3JQ==
-  /@make-mjs/main/0.0.0:
+  /@make-mjs/main/0.0.3:
     dependencies:
-      '@make-mjs/file': 0.0.0
+      '@make-mjs/file': 0.0.2
       '@make-mjs/fs-extra': 0.0.0
-      '@make-mjs/utils': 0.0.0
-      '@tsfun/object': 0.0.1
+      '@make-mjs/utils': 0.0.1
+      '@tsfun/object': 0.0.2
       '@types/node': 12.7.5
+      ancestor-directories: 1.0.1
       tslib: 1.10.0
     dev: false
     resolution:
-      integrity: sha512-rDKBow/iQ+fzSu4rftpsidU53MiyfIVOTEJtTLZXWb6aVhebvxmPkII8eclKLGbNuFDqkFcCQAcB74gXuTfeeA==
-  /@make-mjs/path/0.0.0:
+      integrity: sha512-3b+nXXb3KNLHzMs0uY7j7xKHP85XisfTEQPdaZoOmY1OCq/3r4Xbck8iaCEb5Gzv3EJYZxNGzj/qfHXyfqXuEg==
+  /@make-mjs/path/0.0.2:
     dependencies:
       '@make-mjs/fs-extra': 0.0.0
-      '@make-mjs/utils': 0.0.0
-      '@tsfun/object': 0.0.1
+      '@make-mjs/utils': 0.0.1
+      '@tsfun/object': 0.0.2
       '@types/node': 12.7.5
       exec-once: 0.0.2
       tslib: 1.10.0
     dev: false
     resolution:
-      integrity: sha512-U5QcCYer4YPB67RLV/yUr4R9wCOZhcwaUFWagreRWuGeB4Z4ov0TJdixsdDk9441WS0sCqztkrv6m2/kHJrxGA==
+      integrity: sha512-/uqeWKgDtXKL0ayHslBsLYFrXwNs+MjbNZY0RZkvVmXDRSIwBolj8uKitnX7r0fP+EtTGfnONoYXApCtz4MnAA==
   /@make-mjs/utils/0.0.0:
     dependencies:
       '@types/node': 12.7.5
@@ -143,14 +144,21 @@ packages:
     dev: false
     resolution:
       integrity: sha512-TJMJDMA6IyiV7L2fwZI0lo+eygmssGy2nkCbpFVsSJxVmBRvpf7Iv9okNtS7GPIfJBfSYGq0cT+GBzMvz1flzw==
-  /@tsfun/object/0.0.1:
+  /@make-mjs/utils/0.0.1:
+    dependencies:
+      '@types/node': 12.7.5
+      tslib: 1.10.0
+    dev: false
+    resolution:
+      integrity: sha512-gwaC+qnmNa7haAoMfknH8+UMvwVb0OiMnHkG1VUyqtXnX7D6eg5FhYlzMHu/iDDxRM8dp/zQlYIzmket+F9kmQ==
+  /@tsfun/object/0.0.2:
     dependencies:
       '@types/node': 12.7.5
       tslib: 1.10.0
       utility-types: 3.7.0
     dev: false
     resolution:
-      integrity: sha512-1Znc/BmghtFnxgVrhkpvhSf5HpZbnEcKmXqsXSCXJP0+BW2C00d5st5qkBErSTTEvcGAMgPZ9E95ydlMO8lcrg==
+      integrity: sha512-OsSXSrD0BI0ae52CRr1AcV8xsDnARtv0oQkyBphvxcdCIoFzGWKThXLqysNUhBz+0Zu4IfuDCTbdvnwv6FKwmw==
   /@types/babel__generator/7.0.2:
     dependencies:
       '@babel/types': 7.6.1
@@ -165,7 +173,7 @@ packages:
       integrity: sha512-CeBpmX1J8kWLcDEnI3Cl2Eo6RfbGvzUctA+CjZUhOKDFbLfcr7fc4usEqLNWetrlJd7RhAkyYe2czXop4fICpw==
   /@types/fs-extra/8.0.0:
     dependencies:
-      '@types/node': 12.0.10
+      '@types/node': 12.7.5
     dev: false
     resolution:
       integrity: sha512-bCtL5v9zdbQW86yexOlXWTEGvLNqWxMFyi7gQA7Gcthbezr2cPSOb8SkESVKA937QD5cIwOFLDFt0MQoXOEr9Q==
@@ -173,14 +181,24 @@ packages:
     dev: false
     resolution:
       integrity: sha512-ryO3Q3++yZC/+b8j8BdKd/dn9JlzlHBPdm80656xwYUdmPkpTGTjkAdt6BByiNupGPE8w0FhBgvYy/fX9hRNGQ==
-  /@types/node/12.0.10:
-    dev: false
-    resolution:
-      integrity: sha512-LcsGbPomWsad6wmMNv7nBLw7YYYyfdYcz6xryKYQhx89c3XXan+8Q6AJ43G5XDIaklaVkK3mE4fCb0SBvMiPSQ==
   /@types/node/12.7.5:
     dev: false
     resolution:
       integrity: sha512-9fq4jZVhPNW8r+UYKnxF1e2HkDWOWKM5bC2/7c9wPV835I0aOrVbS/Hw/pWPk2uKrNXQqg9Z959Kz+IYDd5p3w==
+  /@types/ramda/0.25.51:
+    dev: false
+    resolution:
+      integrity: sha512-xcmtfHIgF9SYjhGdsZR1nQslxG4hu0cIpFfLQ4CWdw3KzHvl7ki1AzFLQUkbDTG42ZN3ZsQfdRzXRlkAvbIy5Q==
+  /ancestor-directories/1.0.1:
+    dependencies:
+      '@types/node': 10.14.18
+      monorepo-shared-assets: 0.0.16
+      tslib: 1.10.0
+    dev: false
+    engines:
+      node: '>= 8.9.0'
+    resolution:
+      integrity: sha512-UpKIlCLCyheiSDDIkpf5Dk6yII1um/+NBBu8GkyCvHWlJ7wn0cxAj+PqDCx99ow5HaaHNhoRfo2QoHPE1fb5fg==
   /ansi-styles/3.2.1:
     dependencies:
       color-convert: 1.9.3
@@ -236,7 +254,7 @@ packages:
       integrity: sha512-h3NkZoW2ETeMR2j9GN++c1/BLF+rq24+wLSsjPMhmzPzGVaN0PJdi/J4fcpjsCUlgVMUgJRcdhqvSurCFx4DWQ==
   /fs-extra/8.1.0:
     dependencies:
-      graceful-fs: 4.2.0
+      graceful-fs: 4.2.2
       jsonfile: 4.0.0
       universalify: 0.1.2
     dev: false
@@ -250,16 +268,22 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==
-  /graceful-fs/4.2.0:
+  /graceful-fs/4.2.2:
     dev: false
     resolution:
-      integrity: sha512-jpSvDPV4Cq/bgtpndIWbI5hmYxhQGHPC4d4cqBPb4DLniCfhJokdXhwhaDuLBGLQdvvRum/UiX6ECVIPvDXqdg==
+      integrity: sha512-IItsdsea19BoLC7ELy13q1iJFNmd7ofZH5+X/pJr90/nRoPEX0DJo1dHDbgtYWOhJhcCgMDTOw84RZ72q6lB+Q==
   /has-flag/3.0.0:
     dev: false
     engines:
       node: '>=4'
     resolution:
       integrity: sha1-tdRU3CGZriJWmfNGfloH87lVuv0=
+  /immutable/3.8.2:
+    dev: false
+    engines:
+      node: '>=0.10.0'
+    resolution:
+      integrity: sha1-wkOZUUVbs5kT2vKBN28VMOEErfM=
   /js-tokens/4.0.0:
     dev: false
     resolution:
@@ -274,17 +298,34 @@ packages:
   /jsonfile/4.0.0:
     dev: false
     optionalDependencies:
-      graceful-fs: 4.2.0
+      graceful-fs: 4.2.2
     resolution:
       integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
   /lodash/4.17.15:
     dev: false
     resolution:
       integrity: sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  /monorepo-shared-assets/0.0.16:
+    dependencies:
+      '@types/node': 10.14.18
+      '@types/ramda': 0.25.51
+      immutable: 3.8.2
+      ramda: 0.25.0
+      tslib: 1.10.0
+    deprecated: Some TypeScript errors were tolerated by the compiler
+    dev: false
+    engines:
+      node: '>= 8.9.0'
+    resolution:
+      integrity: sha512-TsF/r4j3iC3siZv27+m57ydDrw6meuXSQ+Rc8CWcvYRXlYQfrOEK+6No3pAhXlyqR6k7OVC+L+pJyW+OU+hPOg==
   /ms/2.1.2:
     dev: false
     resolution:
       integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==
+  /ramda/0.25.0:
+    dev: false
+    resolution:
+      integrity: sha512-GXpfrYVPwx3K7RQ6aYT8KPS8XViSXUVJT1ONhoKPE9VAleW42YE+U+8VEyGWt41EnEQW7gwecYJriTI0pKoecQ==
   /remote-controlled-promise/0.0.4:
     dependencies:
       '@types/node': 10.14.18
@@ -337,7 +378,7 @@ packages:
     resolution:
       integrity: sha512-mqRJXN7dEArK/NZNJUubjr9kbFFVZcmF/JHDc9jt5O/aYXUVmopHYujDMhLmLil1Bxo2+khe6KAIVvDH9Yc4VA==
 specifiers:
-  '@make-mjs/main': ^0.0.0
+  '@make-mjs/main': ^0.0.3
   '@tools/places': 'file:../places'
   '@types/fs-extra': ^8.0.0
   fs-extra: ^8.1.0
