@@ -1,4 +1,5 @@
 dependencies:
+  '@make-mjs/file': 0.0.0
   '@make-mjs/main': 0.0.0
   '@tools/places': 'link:../places'
   '@types/fs-extra': 8.0.0
@@ -337,6 +338,7 @@ packages:
     resolution:
       integrity: sha512-mqRJXN7dEArK/NZNJUubjr9kbFFVZcmF/JHDc9jt5O/aYXUVmopHYujDMhLmLil1Bxo2+khe6KAIVvDH9Yc4VA==
 specifiers:
+  '@make-mjs/file': ^0.0.0
   '@make-mjs/main': ^0.0.0
   '@tools/places': 'file:../places'
   '@types/fs-extra': ^8.0.0
