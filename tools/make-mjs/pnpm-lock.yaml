@@ -1,6 +1,6 @@
 dependencies:
   '@make-mjs/code': 0.1.1
-  '@make-mjs/main': 0.1.2
+  '@make-mjs/main': 0.2.0
   '@tools/places': 'link:../places'
   '@types/fs-extra': 8.0.0
   fs-extra: 8.1.0
@@ -105,7 +105,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-op1yfyM+fEGaINfVKQu7FtcNAHTFx44QdUPCMg4xP8OGDI4B60uF3Zw1i15Xc83yUsPOqKstdd0xBoZKQYvkqA==
-  /@make-mjs/main/0.1.2:
+  /@make-mjs/main/0.2.0:
     dependencies:
       '@make-mjs/code': 0.1.1
       '@make-mjs/utils': 0.0.2
@@ -117,7 +117,7 @@ packages:
       tslib: 1.10.0
     dev: false
     resolution:
-      integrity: sha512-IfDuREyRSeENsob5fFIXS5dsVqcmvNwP0GtFbV2aTD+Q/qtskp0yCnSMhWb+VbQgCtdiaG/7es0MBZzvyNHQVQ==
+      integrity: sha512-NbSujEV/sFTOdrfQmNIW5oLop/j5j5dSPcegzDXkNo831sHl1zB3hoU/ucmSf3LUECEmW5VDVq+mwEIM3mY6TA==
   /@make-mjs/url/0.1.1:
     dependencies:
       '@make-mjs/utils': 0.0.2
@@ -159,7 +159,7 @@ packages:
       integrity: sha512-CeBpmX1J8kWLcDEnI3Cl2Eo6RfbGvzUctA+CjZUhOKDFbLfcr7fc4usEqLNWetrlJd7RhAkyYe2czXop4fICpw==
   /@types/fs-extra/8.0.0:
     dependencies:
-      '@types/node': 12.0.10
+      '@types/node': 12.7.5
     dev: false
     resolution:
       integrity: sha512-bCtL5v9zdbQW86yexOlXWTEGvLNqWxMFyi7gQA7Gcthbezr2cPSOb8SkESVKA937QD5cIwOFLDFt0MQoXOEr9Q==
@@ -167,10 +167,6 @@ packages:
     dev: false
     resolution:
       integrity: sha512-ryO3Q3++yZC/+b8j8BdKd/dn9JlzlHBPdm80656xwYUdmPkpTGTjkAdt6BByiNupGPE8w0FhBgvYy/fX9hRNGQ==
-  /@types/node/12.0.10:
-    dev: false
-    resolution:
-      integrity: sha512-LcsGbPomWsad6wmMNv7nBLw7YYYyfdYcz6xryKYQhx89c3XXan+8Q6AJ43G5XDIaklaVkK3mE4fCb0SBvMiPSQ==
   /@types/node/12.7.5:
     dev: false
     resolution:
@@ -244,7 +240,7 @@ packages:
       integrity: sha512-h3NkZoW2ETeMR2j9GN++c1/BLF+rq24+wLSsjPMhmzPzGVaN0PJdi/J4fcpjsCUlgVMUgJRcdhqvSurCFx4DWQ==
   /fs-extra/8.1.0:
     dependencies:
-      graceful-fs: 4.2.0
+      graceful-fs: 4.2.2
       jsonfile: 4.0.0
       universalify: 0.1.2
     dev: false
@@ -258,10 +254,10 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-WOBp/EEGUiIsJSp7wcv/y6MO+lV9UoncWqxuFfm8eBwzWNgyfBd6Gz+IeKQ9jCmyhoH99g15M3T+QaVHFjizVA==
-  /graceful-fs/4.2.0:
+  /graceful-fs/4.2.2:
     dev: false
     resolution:
-      integrity: sha512-jpSvDPV4Cq/bgtpndIWbI5hmYxhQGHPC4d4cqBPb4DLniCfhJokdXhwhaDuLBGLQdvvRum/UiX6ECVIPvDXqdg==
+      integrity: sha512-IItsdsea19BoLC7ELy13q1iJFNmd7ofZH5+X/pJr90/nRoPEX0DJo1dHDbgtYWOhJhcCgMDTOw84RZ72q6lB+Q==
   /has-flag/3.0.0:
     dev: false
     engines:
@@ -288,7 +284,7 @@ packages:
   /jsonfile/4.0.0:
     dev: false
     optionalDependencies:
-      graceful-fs: 4.2.0
+      graceful-fs: 4.2.2
     resolution:
       integrity: sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=
   /lodash/4.17.15:
@@ -369,7 +365,7 @@ packages:
       integrity: sha512-mqRJXN7dEArK/NZNJUubjr9kbFFVZcmF/JHDc9jt5O/aYXUVmopHYujDMhLmLil1Bxo2+khe6KAIVvDH9Yc4VA==
 specifiers:
   '@make-mjs/code': ^0.1.1
-  '@make-mjs/main': ^0.1.2
+  '@make-mjs/main': ^0.2.0
   '@tools/places': 'file:../places'
   '@types/fs-extra': ^8.0.0
   fs-extra: ^8.1.0
