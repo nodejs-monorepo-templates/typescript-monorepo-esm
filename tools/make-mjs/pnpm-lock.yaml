@@ -1,6 +1,6 @@
 dependencies:
   '@make-mjs/code': 0.1.1
-  '@make-mjs/main': 0.1.2
+  '@make-mjs/main': 0.2.0
   '@tools/places': 'link:../places'
   '@types/fs-extra': 8.0.0
   fs-extra: 8.1.0
@@ -105,7 +105,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-op1yfyM+fEGaINfVKQu7FtcNAHTFx44QdUPCMg4xP8OGDI4B60uF3Zw1i15Xc83yUsPOqKstdd0xBoZKQYvkqA==
-  /@make-mjs/main/0.1.2:
+  /@make-mjs/main/0.2.0:
     dependencies:
       '@make-mjs/code': 0.1.1
       '@make-mjs/utils': 0.0.2
@@ -117,7 +117,7 @@ packages:
       tslib: 1.10.0
     dev: false
     resolution:
-      integrity: sha512-IfDuREyRSeENsob5fFIXS5dsVqcmvNwP0GtFbV2aTD+Q/qtskp0yCnSMhWb+VbQgCtdiaG/7es0MBZzvyNHQVQ==
+      integrity: sha512-NbSujEV/sFTOdrfQmNIW5oLop/j5j5dSPcegzDXkNo831sHl1zB3hoU/ucmSf3LUECEmW5VDVq+mwEIM3mY6TA==
   /@make-mjs/url/0.1.1:
     dependencies:
       '@make-mjs/utils': 0.0.2
@@ -369,7 +369,7 @@ packages:
       integrity: sha512-mqRJXN7dEArK/NZNJUubjr9kbFFVZcmF/JHDc9jt5O/aYXUVmopHYujDMhLmLil1Bxo2+khe6KAIVvDH9Yc4VA==
 specifiers:
   '@make-mjs/code': ^0.1.1
-  '@make-mjs/main': ^0.1.2
+  '@make-mjs/main': ^0.2.0
   '@tools/places': 'file:../places'
   '@types/fs-extra': ^8.0.0
   fs-extra: ^8.1.0
