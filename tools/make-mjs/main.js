@@ -2,7 +2,7 @@ const path = require('path')
 const process = require('process')
 const fsx = require('fs-extra')
 const proceed = require('@make-mjs/main').main
-const { DEFAULT_PARSER_OPTIONS } = require('@make-mjs/file')
+const { DEFAULT_PARSER_OPTIONS } = require('@make-mjs/code')
 const places = require('@tools/places')
 
 async function main () {
