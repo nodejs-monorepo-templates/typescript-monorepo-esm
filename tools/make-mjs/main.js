@@ -35,7 +35,9 @@ async function main () {
       const { root, dir, name } = path.parse(event.file.path)
       const oldDef = path.join(root, dir, name + '.d.ts')
       const newDef = event.file.path + '.d.ts'
-      await fsx.copyFile(oldDef, newDef)
+      if (await fsx.pathExists(oldDef)) {
+        await fsx.copyFile(oldDef, newDef)
+      }
     }
   }
 
