@@ -1,6 +1,7 @@
 import path from 'path'
 import process from 'process'
 import chalk from 'chalk'
+import glob2regex from 'glob-to-regexp'
 import * as places from '@tools/places'
 import { commands, enums, functions } from '../index'
 const { ExitStatusCode } = enums
@@ -14,11 +15,12 @@ class Command {
   ) {}
 }
 
-type CommandName = Exclude<keyof Dict, 'mkspawn' | 'callCmd'>
+type CommandName = Exclude<keyof Dict, 'mkspawn' | 'callCmd' | 'isCmd'>
 
 abstract class Dict {
   protected abstract mkspawn (script: string, ...args: string[]): () => void
   protected abstract callCmd (command: CommandName, ...args: string[]): void
+  protected abstract isCmd (command: string): command is CommandName
 
   public readonly help = new Command(
     'Print usage',
@@ -40,6 +42,27 @@ abstract class Dict {
       }
 
       console.info()
+    }
+  )
+
+  public readonly glob = new Command(
+    'Run command on files that match glob',
+    ([cmd, ...args]): void => {
+      if (!cmd) {
+        printError('Missing command')
+        return process.exit(ExitStatusCode.InsufficientArguments)
+      }
+
+      if (!this.isCmd(cmd)) {
+        printError(`Unknown Command: ${cmd}`)
+        return process.exit(ExitStatusCode.UnknownCommand)
+      }
+
+      const regexes = args
+        .map(glob => glob2regex(glob, { globstar: true, extended: true }))
+        .map(glob => glob.source)
+
+      this.callCmd(cmd, ...regexes)
     }
   )
 
@@ -224,6 +247,10 @@ function main (cmd?: string, argv: readonly string[] = []) {
       console.info(chalk.italic.underline.dim('@call'), chalk.bold(cmd), ...args)
       main(cmd, args)
     }
+
+    isCmd (cmd: string): cmd is CommandName {
+      return Object.keys(this).includes(cmd)
+    }
   }
 
   const dict = new PrvDict()
@@ -234,8 +261,8 @@ function main (cmd?: string, argv: readonly string[] = []) {
     return process.exit(ExitStatusCode.InsufficientArguments)
   }
 
-  if (cmd in dict) {
-    const command = dict[cmd as keyof PrvDict]
+  if (dict.isCmd(cmd)) {
+    const command = dict[cmd]
     if (command instanceof Command) {
       return command.act(argv)
     }
