@@ -5,8 +5,8 @@
   "bin": "bin.js",
   "dependencies": {
     "fs-extra": "^8.1.0",
-    "@make-mjs/main": "^0.4.0",
-    "@make-mjs/code": "^0.2.0",
+    "@make-mjs/main": "^0.4.1",
+    "@make-mjs/code": "^0.2.1",
     "@types/fs-extra": "^8.0.0",
     "@tools/places": "file:../places"
   }
