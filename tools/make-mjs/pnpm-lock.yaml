@@ -1,6 +1,6 @@
 dependencies:
-  '@make-mjs/code': 0.2.1
-  '@make-mjs/main': 0.4.1
+  '@make-mjs/code': 0.2.2
+  '@make-mjs/main': 0.4.2
   '@tools/places': 'link:../places'
   '@types/fs-extra': 8.0.0
   fs-extra: 8.1.0
@@ -12,16 +12,15 @@ packages:
     dev: false
     resolution:
       integrity: sha512-27d4lZoomVyo51VegxI20xZPuSHusqbQag/ztrBC7wegWoQ1nLREPVSKSW8byhTlzTKyNE4ifaTA6lCp7JjpFw==
-  /@babel/generator/7.6.0:
+  /@babel/generator/7.6.2:
     dependencies:
       '@babel/types': 7.6.1
       jsesc: 2.5.2
       lodash: 4.17.15
       source-map: 0.5.7
-      trim-right: 1.0.1
     dev: false
     resolution:
-      integrity: sha512-Ms8Mo7YBdMMn1BYuNtKuP/z0TgEIhbcyB8HVR6PPNYp4P61lMsABiS4A3VG1qznjXVCf3r+fVHhm4efTYVsySA==
+      integrity: sha512-j8iHaIW4gGPnViaIHI7e9t/Hl8qLjERI6DcV9kEpAIDJsAOrcnXqRS7t+QbhL76pwbtqP+QCQLL0z1CyVmtjjQ==
   /@babel/helper-function-name/7.1.0:
     dependencies:
       '@babel/helper-get-function-arity': 7.0.0
@@ -50,35 +49,35 @@ packages:
     dev: false
     resolution:
       integrity: sha512-7dV4eu9gBxoM0dAnj/BCFDW9LFU0zvTrkq0ugM7pnHEgguOEeOz1so2ZghEdzviYzQEED0r4EAgpsBChKy1TRQ==
-  /@babel/parser/7.6.0:
+  /@babel/parser/7.6.2:
     dev: false
     engines:
       node: '>=6.0.0'
     hasBin: true
     resolution:
-      integrity: sha512-+o2q111WEx4srBs7L9eJmcwi655eD8sXniLqMB93TBK9GrNzGrxDWSjiqz2hLU0Ha8MTXFIP0yd9fNdP+m43ZQ==
+      integrity: sha512-mdFqWrSPCmikBoaBYMuBulzTIKuXVPtEISFbRRVNwMWpCms/hmE2kRq0bblUHaNRKrjRlmVbx1sDHmjmRgD2Xg==
   /@babel/template/7.6.0:
     dependencies:
       '@babel/code-frame': 7.5.5
-      '@babel/parser': 7.6.0
+      '@babel/parser': 7.6.2
       '@babel/types': 7.6.1
     dev: false
     resolution:
       integrity: sha512-5AEH2EXD8euCk446b7edmgFdub/qfH1SN6Nii3+fyXP807QRx9Q73A2N5hNwRRslC2H9sNzaFhsPubkS4L8oNQ==
-  /@babel/traverse/7.6.0:
+  /@babel/traverse/7.6.2:
     dependencies:
       '@babel/code-frame': 7.5.5
-      '@babel/generator': 7.6.0
+      '@babel/generator': 7.6.2
       '@babel/helper-function-name': 7.1.0
       '@babel/helper-split-export-declaration': 7.4.4
-      '@babel/parser': 7.6.0
+      '@babel/parser': 7.6.2
       '@babel/types': 7.6.1
       debug: 4.1.1
       globals: 11.12.0
       lodash: 4.17.15
     dev: false
     resolution:
-      integrity: sha512-93t52SaOBgml/xY74lsmt7xOR4ufYvhb5c5qiM6lu4J/dWGMAfAh6eKw4PjLes6DI6nQgearoxnFJk60YchpvQ==
+      integrity: sha512-8fRE76xNwNttVEF2TwxJDGBLWthUkHWSldmfuBzVRmEDWOtu4XdINTgN7TDWzuLg4bbeIMLvfMFD9we5YcWkRQ==
   /@babel/types/7.6.1:
     dependencies:
       esutils: 2.0.3
@@ -87,14 +86,14 @@ packages:
     dev: false
     resolution:
       integrity: sha512-X7gdiuaCmA0uRjCmRtYJNAVCc/q+5xSgsfKJHqMN4iNLILX39677fJE1O40arPMh0TTtS9ItH67yre6c7k6t0g==
-  /@make-mjs/code/0.2.1:
+  /@make-mjs/code/0.2.2:
     dependencies:
-      '@babel/generator': 7.6.0
-      '@babel/parser': 7.6.0
-      '@babel/traverse': 7.6.0
+      '@babel/generator': 7.6.2
+      '@babel/parser': 7.6.2
+      '@babel/traverse': 7.6.2
       '@babel/types': 7.6.1
-      '@make-mjs/url': 0.2.1
-      '@tsfun/object': 0.0.4
+      '@make-mjs/url': 0.2.2
+      '@tsfun/object': 0.0.5
       '@types/babel__generator': 7.0.2
       '@types/babel__traverse': 7.0.7
       '@types/fs-extra': 8.0.0
@@ -104,12 +103,12 @@ packages:
       tslib: 1.10.0
     dev: false
     resolution:
-      integrity: sha512-T0Tz7NCZ59rtkx3P45uYrnlhQVFQ+axRAOzn6IuvhKuXp2ap2+AgEWEAdoFrt+YbK+6RW3wEe0xpuwCk6KMCQg==
-  /@make-mjs/main/0.4.1:
+      integrity: sha512-ZkCR9HqrstYP6S9OTzPj+RLRKWySPyeXFkO/iEYrGi2K3yhqiaazaHknA1jSo6bYzxr63ZDUIiISbGATFbSayQ==
+  /@make-mjs/main/0.4.2:
     dependencies:
-      '@make-mjs/code': 0.2.1
-      '@make-mjs/utils': 0.0.2
-      '@tsfun/object': 0.0.4
+      '@make-mjs/code': 0.2.2
+      '@make-mjs/utils': 0.0.3
+      '@tsfun/object': 0.0.5
       '@types/fs-extra': 8.0.0
       '@types/node': 12.7.5
       ancestor-directories: 1.0.1
@@ -118,11 +117,11 @@ packages:
       tslib: 1.10.0
     dev: false
     resolution:
-      integrity: sha512-q1rwZ8lNd9Izv3HmuEIA5fJwQAH3ZeWfH4W4PznR/4qrdciR7S8mAQBgO/FZO6gME6fb6bWlBWNbA3W43fswHQ==
-  /@make-mjs/url/0.2.1:
+      integrity: sha512-0x/bcsxruaDy6mUJyjn5GP5ke/CYSWDQGA7h0TXng4ZmwRWBsOTJTxXb3pcQ54CTx+AzqS2Yv4tp5nhBtYIOZQ==
+  /@make-mjs/url/0.2.2:
     dependencies:
-      '@make-mjs/utils': 0.0.2
-      '@tsfun/object': 0.0.4
+      '@make-mjs/utils': 0.0.3
+      '@tsfun/object': 0.0.5
       '@types/fs-extra': 8.0.0
       '@types/node': 12.7.5
       exec-once: 0.1.0
@@ -130,22 +129,22 @@ packages:
       tslib: 1.10.0
     dev: false
     resolution:
-      integrity: sha512-OdiVFVjRibso2LCB7MHhdbX4S9a9CfNg4UbcvolQTIlLIAe52DLjaMOkpo7MiJB/XfcCZeUdcAPNaYp7If9/Qg==
-  /@make-mjs/utils/0.0.2:
+      integrity: sha512-V+k4151XJqeFmjclgzDrRITuxxKrsgupXn5g3Ad6psKBB2yNgaR4YhosYXWYK2E7X8Nk+kTWvYNIlJSR44oZHA==
+  /@make-mjs/utils/0.0.3:
     dependencies:
       '@types/node': 12.7.5
       tslib: 1.10.0
     dev: false
     resolution:
-      integrity: sha512-gTTvNMDbNFm44k1HCDA6F3sxIv5TZpMoOCVldpBRevUIKaN9qDRPlyuq5kJYipB9zxBj0kFLB/BnnUf2PR6sGQ==
-  /@tsfun/object/0.0.4:
+      integrity: sha512-nktjKFuytIUTQBjoUTn3jDtvu/t6psOiUe8Cy968BdzOeYurGCi/hN2waQwvfk/iVndVgJhsODmi0gbDmkCHPA==
+  /@tsfun/object/0.0.5:
     dependencies:
       '@types/node': 12.7.5
       tslib: 1.10.0
       utility-types: 3.7.0
     dev: false
     resolution:
-      integrity: sha512-mBM45CKozvRJBMfQyPlqmKyzO6sI0BfTVfAZJg+Snal4fgQ/cH44ya2UpxDNLEH4yPQTsxcvcFoKeqgDdhNo6Q==
+      integrity: sha512-6yOdL65oTaxMgV5sfvFJAa+QAvN+wm61Lzfgw4v4+DOgZcQQwYtxpth6KkfbDZPfMJJosV5CVWcRtsXSEL/WcQ==
   /@types/babel__generator/7.0.2:
     dependencies:
       '@babel/types': 7.6.1
@@ -349,12 +348,6 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha1-3F5pjL0HkmW8c+A3doGk5Og/YW4=
-  /trim-right/1.0.1:
-    dev: false
-    engines:
-      node: '>=0.10.0'
-    resolution:
-      integrity: sha1-yy4SAwZ+DI3h9hQJS5/kVwTqYAM=
   /tslib/1.10.0:
     dev: false
     resolution:
@@ -372,8 +365,8 @@ packages:
     resolution:
       integrity: sha512-mqRJXN7dEArK/NZNJUubjr9kbFFVZcmF/JHDc9jt5O/aYXUVmopHYujDMhLmLil1Bxo2+khe6KAIVvDH9Yc4VA==
 specifiers:
-  '@make-mjs/code': ^0.2.1
-  '@make-mjs/main': ^0.4.1
+  '@make-mjs/code': ^0.2.2
+  '@make-mjs/main': ^0.4.2
   '@tools/places': 'file:../places'
   '@types/fs-extra': ^8.0.0
   fs-extra: ^8.1.0
