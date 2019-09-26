@@ -1,0 +1,10 @@
+{
+  "name": "@tools/publish-docs",
+  "version": "0.0.0",
+  "private": true,
+  "dependencies": {
+    "@tools/gh-pages": "file:../gh-pages",
+    "@tools/preloaded-node": "file:../preloaded-node",
+    "@tools/places": "file:../places"
+  }
+}
