@@ -44,7 +44,7 @@ export async function main () {
     const app = new Application({
       ...compilerOptions,
       target: 'esnext',
-      module: 'commonjs',
+      module: 'esnext',
       lib: [],
       experimentalDecorators: true,
       exclude: ['**/node_modules', '**/.git'],
