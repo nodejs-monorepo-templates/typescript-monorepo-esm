@@ -46,6 +46,7 @@ export async function main () {
       ignoreCompilerErrors: true,
       target: 'esnext',
       module: 'esnext',
+      mode: 'file',
       exclude: ['**/node_modules', '**/.git'],
       logger: 'none',
       name: `${name} — References`,
