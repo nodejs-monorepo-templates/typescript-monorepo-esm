@@ -517,4 +517,4 @@ specifiers:
   '@types/inquirer': ^6.5.0
   fs-extra: ^8.1.0
   inquirer: ^7.0.4
-  isomorphic-git: ^0.78.5
+  isomorphic-git: =0.78.5
