@@ -36,6 +36,8 @@ export interface Manifest {
   readonly repository?: Repository
   readonly bugs?: Bugs
   readonly main?: string
+  readonly module?: string
+  readonly browser?: string
   readonly types?: string
   readonly keywords?: readonly string[]
   readonly sideEffects?: boolean

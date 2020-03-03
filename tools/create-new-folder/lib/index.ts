@@ -164,6 +164,9 @@ export async function newPackage (name: string) {
     keywords: keywords
       ? String(keywords).split(' ').filter(Boolean)
       : undefined,
+    main: 'index.js',
+    module: 'index.mjs',
+    browser: 'index.mjs',
     sideEffects: sideEffects === 'undefined' ? undefined : sideEffects,
     dependencies: {
       tslib: devDependencies.tslib,
