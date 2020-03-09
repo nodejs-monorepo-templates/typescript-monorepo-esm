@@ -28,7 +28,9 @@ export const files = pipeline(
   asyncFilter(item => item.stats.isFile())
 )
 
+const jsExt = ['.js', '.mjs'] as const
+
 export const jsFiles = pipeline(
   files,
-  asyncFilter(item => item.basename.endsWith('.js'))
+  asyncFilter(item => jsExt.some(ext => item.basename.endsWith(ext)))
 )
