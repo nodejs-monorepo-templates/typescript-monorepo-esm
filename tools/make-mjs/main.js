@@ -30,17 +30,8 @@ async function main () {
     }
   })
 
-  for await (const event of events) {
-    if (event.type === 'AfterWrite') {
-      const { root, dir, name } = path.parse(event.file.path)
-      const oldDef = path.join(root, dir, name + '.d.ts')
-      const newDef = event.file.path + '.d.ts'
-      if (await fsx.pathExists(oldDef)) {
-        await fsx.copyFile(oldDef, newDef)
-      }
-    }
-  }
-
+  // iterate events to execute actions
+  for await (const _ of events) {} // eslint-disable-line
   return 0
 }
 
