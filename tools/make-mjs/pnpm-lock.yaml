@@ -2,7 +2,7 @@ dependencies:
   '@make-mjs/code': 0.2.8
   '@make-mjs/main': 0.4.9
   '@tools/places': 'link:../places'
-  '@types/fs-extra': 8.1.0
+  '@types/fs-extra': 9.0.1
   fs-extra: 9.0.0
 lockfileVersion: 5.1
 packages:
@@ -170,12 +170,12 @@ packages:
     dev: false
     resolution:
       integrity: sha512-J00cVDALmi/hJOYsunyT52Hva5TnJeKP5yd1r+mH/ZU0mbYZflR0Z5kw5kITtKTRYMhm1JMClOFYdHnQszEvqw==
-  /@types/fs-extra/8.1.0:
+  /@types/fs-extra/9.0.1:
     dependencies:
       '@types/node': 13.1.6
     dev: false
     resolution:
-      integrity: sha512-UoOfVEzAUpeSPmjm7h1uk5MH6KZma2z2O7a75onTGjnNvAvMVrPzPL/vBbT65iIGHWj6rokwfmYcmxmlSf2uwg==
+      integrity: sha512-B42Sxuaz09MhC3DDeW5kubRcQ5by4iuVQ0cRRWM2lggLzAa/KVom0Aft/208NgMvNQQZ86s5rVcqDdn/SH0/mg==
   /@types/node/12.7.11:
     dev: false
     resolution:
@@ -400,5 +400,5 @@ specifiers:
   '@make-mjs/code': ^0.2.8
   '@make-mjs/main': ^0.4.9
   '@tools/places': 'file:../places'
-  '@types/fs-extra': ^8.1.0
+  '@types/fs-extra': ^9.0.0
   fs-extra: ^9.0.0
