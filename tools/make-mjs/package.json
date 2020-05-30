@@ -7,7 +7,7 @@
     "fs-extra": "^9.0.0",
     "@make-mjs/main": "^0.4.9",
     "@make-mjs/code": "^0.2.8",
-    "@types/fs-extra": "^8.1.0",
+    "@types/fs-extra": "^9.0.0",
     "@tools/places": "file:../places"
   }
 }
