@@ -172,7 +172,7 @@ abstract class Dict {
     args => {
       this.callCmd('buildTypescript', '--module', 'ES2015')
       this.callCmd('makeMJS', ...args)
-    }
+    },
   )
 
   public readonly buildTypescript = new Command(
@@ -207,7 +207,7 @@ abstract class Dict {
 
   public readonly makeMJS = new Command(
     'Change extension of all output *.js files to *.mjs',
-    this.mkspawn(commands.makeMJS)
+    this.mkspawn(commands.makeMJS),
   )
 
   public readonly cleanDocs = new Command(

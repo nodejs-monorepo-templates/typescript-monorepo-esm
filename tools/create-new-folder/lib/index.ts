@@ -159,9 +159,7 @@ export async function newPackage(name: string) {
     homepage,
     repository,
     bugs,
-    keywords: keywords
-      ? String(keywords).split(' ').filter(Boolean)
-      : undefined,
+    keywords: keywords ? String(keywords).split(' ').filter(Boolean) : undefined,
     main: 'index.js',
     module: 'index.mjs',
     browser: 'index.mjs',
