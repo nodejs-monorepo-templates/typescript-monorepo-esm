@@ -121,10 +121,10 @@ export const enum ManifestType {
   Root = 'Root',
   Package = 'Package',
   Test = 'Test',
-  Tool = 'Tool'
+  Tool = 'Tool',
 }
 
-export function getContainerFromManifestType (manifestType: ManifestType): string {
+export function getContainerFromManifestType(manifestType: ManifestType): string {
   switch (manifestType) {
     case ManifestType.Root:
       return places.project
@@ -137,7 +137,7 @@ export function getContainerFromManifestType (manifestType: ManifestType): strin
   }
 }
 
-export function getManifestTypeFromContainer (container: string): ManifestType | null {
+export function getManifestTypeFromContainer(container: string): ManifestType | null {
   switch (container) {
     case places.project:
       return ManifestType.Root
@@ -152,7 +152,7 @@ export function getManifestTypeFromContainer (container: string): ManifestType |
   }
 }
 
-export function getManifestTypeFromPath (filename: string): ManifestType | null {
+export function getManifestTypeFromPath(filename: string): ManifestType | null {
   if (filename.startsWith(places.project)) return ManifestType.Root
   if (filename.startsWith(places.packages)) return ManifestType.Package
   if (filename.startsWith(places.test)) return ManifestType.Test
@@ -190,13 +190,13 @@ interface UnknownLoadedResult extends GenericLoadedResult {
 }
 
 type LoadedResult =
-  RootLoadedResult |
-  PackageLoadedResult |
-  TestLoadedResult |
-  ToolLoadedResult |
-  UnknownLoadedResult
+  | RootLoadedResult
+  | PackageLoadedResult
+  | TestLoadedResult
+  | ToolLoadedResult
+  | UnknownLoadedResult
 
-export function loadManifest (filename: string): LoadedResult {
+export function loadManifest(filename: string): LoadedResult {
   const { base } = path.parse(filename)
   if (base !== 'package.json') throw new RangeError(`Invalid file name: ${base}`)
   const type = getManifestTypeFromPath(filename)
@@ -206,7 +206,7 @@ export function loadManifest (filename: string): LoadedResult {
 
 export const rootManifestPath = path.join(places.project, 'package.json')
 
-export function loadRootManifest (): RootManifest {
+export function loadRootManifest(): RootManifest {
   return require(rootManifestPath)
 }
 
@@ -214,7 +214,7 @@ interface Loader<Return> {
   (name: string): Return
 }
 
-function Loader<Return> (container: string): Loader<Return> {
+function Loader<Return>(container: string): Loader<Return> {
   return name => {
     const filename = path.join(container, name, 'package.json')
     return require(filename)
@@ -225,7 +225,7 @@ export const loadPackageManifest = Loader<PackageManifest>(places.packages)
 export const loadTestManifest = Loader<TestManifest>(places.packages)
 export const loadToolManifest = Loader<ToolManifest>(places.packages)
 
-export async function writeManifest<Obj extends Manifest> (filename: string, manifest: Obj) {
+export async function writeManifest<Obj extends Manifest>(filename: string, manifest: Obj) {
   await writeJSON(filename, manifest)
 }
 
@@ -233,7 +233,7 @@ interface Writer<Obj extends Manifest> {
   (name: string, manifest: Obj): Promise<void>
 }
 
-function Writer<Obj extends Manifest> (container: string): Writer<Obj> {
+function Writer<Obj extends Manifest>(container: string): Writer<Obj> {
   return (name, manifest) => {
     const filename = path.join(container, name, 'package.json')
     return writeManifest(filename, manifest)
