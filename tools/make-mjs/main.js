@@ -5,7 +5,7 @@ const proceed = require('@make-mjs/main').main
 const { DEFAULT_PARSER_OPTIONS } = require('@make-mjs/code')
 const places = require('@tools/places')
 
-async function main () {
+async function main() {
   const IGNORED_DIRECTORIES = ['.git', 'node_modules']
 
   const knownMjsPackagesPromises = (
@@ -26,8 +26,8 @@ async function main () {
     filter: param => param.base.endsWith('.js'),
     codeTransformOptions: {
       parserOptions: DEFAULT_PARSER_OPTIONS,
-      isMjsPackage: param => knownMjsPackages.includes(param.packageName)
-    }
+      isMjsPackage: param => knownMjsPackages.includes(param.packageName),
+    },
   })
 
   // iterate events to execute actions
@@ -40,5 +40,5 @@ main().then(
   error => {
     console.error(error)
     process.exit(1)
-  }
+  },
 )

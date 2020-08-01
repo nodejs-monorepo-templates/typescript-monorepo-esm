@@ -27,7 +27,7 @@
     "@tools/make-mjs": "file:../make-mjs",
     "@tools/places": "file:../places",
     "@tools/preloaded-node": "file:../preloaded-node",
-    "@tools/standardjs": "file:../standardjs",
+    "@tools/sane-fmt": "file:../sane-fmt",
     "@tools/tslint": "file:../tslint",
     "@tools/typescript": "file:../typescript",
     "@tools/workspace": "file:../workspace"
