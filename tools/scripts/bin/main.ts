@@ -98,7 +98,6 @@ abstract class Dict {
       await this.callCmd('buildDocs')
       await this.callCmd('buildMJS')
       await this.callCmd('buildTypescript')
-      await this.callCmd('tripleSlashDirectives')
     },
   )
 
@@ -182,14 +181,6 @@ abstract class Dict {
       '--project',
       path.resolve(places.packages, 'tsconfig.prod.json'),
     ),
-  )
-
-  public readonly tripleSlashDirectives = new Command(
-    'Add references to TypeScript definitions for JavaScript files',
-    async () => {
-      const { main } = await import('@tools/triple-slash-directives')
-      await main()
-    },
   )
 
   public readonly buildDocs = new Command(

@@ -14,7 +14,6 @@
     "@types/glob-to-regexp": "^0.4.0",
     "@types/fs-extra": "^9.0.1",
     "@tools/gh-pages": "file:../gh-pages",
-    "@tools/triple-slash-directives": "file:../triple-slash-directives",
     "@tools/clean-typescript-build": "file:../clean-typescript-build",
     "@tools/add-dependency": "file:../add-dependency",
     "@tools/create-new-folder": "file:../create-new-folder",
